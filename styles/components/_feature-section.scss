@@ -1,0 +1,54 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+
+.features-section{
+  padding: 64px 80px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.feature-block{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc((100% - 64px) / 3);
+  max-width: calc((100% - 64px) / 3);
+  box-sizing: border-box;
+
+  &__title{
+    width: 100%;
+    padding: 64px 32px 40px 32px;
+    background: $gradient-pink;
+    border-radius: 15px;
+    font-size: $text-preset-3;
+    line-height: $leading-preset-3;
+    font-weight: $font-weight-preset-3;
+    color: $white;
+  }
+
+  &__icon{
+    margin-top: -28px;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 64px 32px 40px 32px;
+    border-radius: 15px;
+    border: 1px solid black;
+
+    & h2{
+      font-size: $text-preset-4;
+      line-height: $leading-preset-4;
+      font-weight: $font-weight-preset-4;
+    }
+
+    & span{
+      color: $grey;
+      font-size: $text-preset-5;
+      line-height: $leading-preset-5;
+      font-weight: $font-weight-preset-5;
+    }
+  }
+}

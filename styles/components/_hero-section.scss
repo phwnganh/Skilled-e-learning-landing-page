@@ -1,0 +1,47 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+.hero-section{
+  padding: 64px 80px;
+}
+
+.hero-container{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.hero-body{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__btn{
+    color: $white;
+    background: $gradient-pink;
+    padding: 16px 32px;
+    border-radius: 28px;
+    align-items: flex-start;
+  }
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__title{
+    font-size: $text-preset-1;
+    line-height: $leading-preset-1;
+    font-weight: $font-weight-preset-1;
+    color: $blue-900;
+  }
+
+  &__description{
+    font-size: $text-preset-5;
+    line-height: $leading-preset-5;
+    font-weight: $font-weight-preset-5;
+    color: $grey;
+  }
+
+
+}

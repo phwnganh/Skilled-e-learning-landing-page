@@ -1,0 +1,19 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+.header{
+  padding: 24px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn{
+    background-color: $blue-900;
+    color: $white;
+    font-size: $text-preset-7;
+    line-height: $leading-preset-7;
+    font-weight: $font-weight-preset-7;
+    border-radius: 28px;
+    padding: 16px 32px;
+  }
+}
+
