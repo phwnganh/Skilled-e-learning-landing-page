@@ -1,0 +1,30 @@
+@use '../tokens/colors' as *;
+@use '../tokens/typography' as *;
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 80px;
+  background-color: $blue-900;
+
+  &__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+      height: 28px;
+    }
+  }
+
+  &__btn{
+    color: $white;
+    background: $gradient-purple;
+    padding: 16px 32px;
+    border-radius: 28px;
+    font-size: $text-preset-7;
+    line-height: $leading-preset-7;
+    font-weight: $font-weight-preset-7;
+  }
+}

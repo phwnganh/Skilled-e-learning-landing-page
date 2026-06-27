@@ -27,7 +27,10 @@
   }
 
   &__icon{
-    margin-top: -28px;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    transform: translateY(-50%);
   }
 
   &__content{
@@ -37,6 +40,8 @@
     padding: 64px 32px 40px 32px;
     border-radius: 15px;
     border: 1px solid black;
+    flex: 1;
+    height: 100%;
 
     & h2{
       font-size: $text-preset-4;
@@ -50,5 +55,21 @@
       line-height: $leading-preset-5;
       font-weight: $font-weight-preset-5;
     }
+
   }
+
+  &__text{
+    color: $pink-600;
+    font-size: $text-preset-7;
+    line-height: $leading-preset-7;
+    font-weight: $font-weight-preset-7;
+    margin-top: auto;
+  }
+}
+
+.feature-container{
+    position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
