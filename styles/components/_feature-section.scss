@@ -73,3 +73,30 @@
   flex-direction: column;
   flex: 1;
 }
+
+@media (max-width: 1024px) {
+
+  .features-section{
+    padding: 24px 44px;
+  }
+
+  .feature-block{
+    flex: 0 0 calc((100% - 32px) / 2);
+    max-width: calc((100% - 32px) / 2);
+
+    &__title{
+      flex: 1;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .features-section{
+    gap: 32px;
+    padding: 24px 20px;
+  }
+  .feature-block{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

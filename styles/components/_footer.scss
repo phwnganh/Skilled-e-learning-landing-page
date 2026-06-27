@@ -28,3 +28,15 @@
     font-weight: $font-weight-preset-7;
   }
 }
+
+@media (max-width: 1024px) {
+  .footer{
+    padding: 24px 44px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer{
+    padding: 24px 20px;
+  }
+}
