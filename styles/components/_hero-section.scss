@@ -29,6 +29,10 @@
     line-height: $leading-preset-7;
     font-weight: $font-weight-preset-7;
   }
+
+  &__btn:hover{
+    opacity: 0.5;
+  }
 }
 
 .hero-content{

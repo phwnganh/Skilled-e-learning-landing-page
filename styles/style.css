@@ -119,6 +119,10 @@ fieldset {
   font-weight: 700;
   margin-top: auto;
 }
+.feature-block__text:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
 
 .feature-container {
   position: relative;
@@ -173,6 +177,9 @@ fieldset {
   line-height: 150%;
   font-weight: 700;
 }
+.footer__btn:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 1024px) {
   .footer {
@@ -205,6 +212,9 @@ fieldset {
   font-weight: 700;
   border-radius: 28px;
   padding: 16px 32px;
+}
+.header__btn:hover {
+  background-color: #666CA3;
 }
 
 @media (max-width: 1024px) {
@@ -245,6 +255,9 @@ fieldset {
   font-size: 18px;
   line-height: 150%;
   font-weight: 700;
+}
+.hero-body__btn:hover {
+  opacity: 0.5;
 }
 
 .hero-content {
